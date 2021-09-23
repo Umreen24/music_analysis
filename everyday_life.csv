@@ -1,0 +1,5 @@
+,name,album,artist,release_date,length,popularity,acoustic,danceability,energy,instrumentalness,liveness,loudness,speechiness,tempo,time_signature
+0,Sunrise,Everyday Life,Coldplay,11/22/19,151093,57,0.939,0.146,0.216,0.54,0.0773,-12.302,0.0399,78.045,4
+1,Church,Everyday Life,Coldplay,11/22/19,230013,53,0.00865,0.449,0.736,0.145,0.147,-6.98,0.0368,123.973,4
+2,Trouble In Town,Everyday Life,Coldplay,11/22/19,278906,56,0.427,0.595,0.315,0.648,0.111,-11.456,0.0296,96.018,4
+3,BrokEn,Everyday Life,Coldplay,11/22/19,150200,50,0.923,0.55,0.271,0.0,0.147,-11.836,0.0495,130.151,4
