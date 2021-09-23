@@ -1,0 +1,12 @@
+,name,album,artist,release_date,length,popularity,acoustic,danceability,energy,instrumentalness,liveness,loudness,speechiness,tempo,time_signature
+0,A Head Full of Dreams,A Head Full of Dreams,Coldplay,12/4/15,223773,63,0.0021,0.449,0.92,0.0167,0.334,-4.982,0.0737,122.984,4
+1,Birds,A Head Full of Dreams,Coldplay,12/4/15,229093,59,0.000315,0.559,0.841,0.437,0.0816,-5.584,0.0332,105.009,4
+2,Hymn for the Weekend,A Head Full of Dreams,Coldplay,12/4/15,258266,79,0.211,0.491,0.693,6.92e-06,0.325,-6.487,0.0377,90.027,4
+3,Everglow,A Head Full of Dreams,Coldplay,12/4/15,282693,66,0.456,0.534,0.445,0.0684,0.112,-9.155,0.0292,146.107,4
+4,Adventure of a Lifetime,A Head Full of Dreams,Coldplay,12/4/15,263786,74,0.00205,0.638,0.924,0.000175,0.149,-3.887,0.036,111.995,4
+5,Fun (feat. Tove Lo),A Head Full of Dreams,Coldplay,12/4/15,267533,57,0.271,0.485,0.735,7.49e-06,0.0853,-5.125,0.0354,134.021,4
+6,Kaleidoscope,A Head Full of Dreams,Coldplay,12/4/15,111853,49,0.964,0.288,0.285,0.897,0.406,-18.193,0.0355,127.122,4
+7,Army of One,A Head Full of Dreams,Coldplay,12/4/15,376826,55,0.275,0.387,0.659,6.44e-05,0.0861,-6.492,0.0434,146.048,4
+8,Amazing Day,A Head Full of Dreams,Coldplay,12/4/15,271106,56,0.017,0.451,0.636,0.435,0.141,-5.796,0.0274,97.041,3
+9,Colour Spectrum,A Head Full of Dreams,Coldplay,12/4/15,60106,48,0.852,0.348,0.166,0.915,0.137,-20.349,0.0376,123.58,4
+10,Up&Up,A Head Full of Dreams,Coldplay,12/4/15,405320,66,0.0488,0.479,0.717,0.000333,0.102,-5.459,0.0605,163.989,4

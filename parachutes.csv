@@ -1,0 +1,11 @@
+,name,album,artist,release_date,length,popularity,acoustic,danceability,energy,instrumentalness,liveness,loudness,speechiness,tempo,time_signature
+0,Don't Panic,Parachutes,Coldplay,7/10/00,136866,64,0.206,0.602,0.612,0.00607,0.107,-8.409,0.0335,122.062,4
+1,Shiver,Parachutes,Coldplay,7/10/00,304200,64,0.0334,0.396,0.803,0.0,0.0688,-6.186,0.0487,116.705,3
+2,Spies,Parachutes,Coldplay,7/10/00,318773,56,0.0236,0.309,0.673,0.000144,0.0635,-5.524,0.0319,147.599,4
+3,Sparks,Parachutes,Coldplay,7/10/00,227093,76,0.748,0.371,0.268,0.0517,0.104,-10.506,0.0281,102.617,3
+4,Yellow,Parachutes,Coldplay,7/10/00,266773,84,0.00239,0.429,0.661,0.000121,0.234,-7.227,0.0281,173.372,4
+5,Trouble,Parachutes,Coldplay,7/10/00,273426,70,0.189,0.565,0.546,0.0015,0.17,-7.496,0.0314,139.757,4
+6,Parachutes,Parachutes,Coldplay,7/10/00,46200,57,0.871,0.555,0.0845,2.27e-06,0.138,-18.348,0.0518,137.001,4
+7,High Speed,Parachutes,Coldplay,7/10/00,256466,60,0.396,0.495,0.525,0.00736,0.0961,-9.342,0.0301,154.466,4
+8,We Never Change,Parachutes,Coldplay,7/10/00,249400,59,0.535,0.433,0.288,0.000169,0.105,-10.801,0.0296,136.939,3
+9,Everything's Not Lost - Includes Hidden Track 'Life Is For Living',Parachutes,Coldplay,7/10/00,436440,55,0.104,0.374,0.456,0.000176,0.197,-7.35,0.0368,135.643,4
