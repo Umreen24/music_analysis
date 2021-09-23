@@ -23,7 +23,7 @@ from tabulate import tabulate
 FUNCTIONS
 """""""""""""""
 def read_data(file):
-    dataframe = pd.read_csv(file, sep = ',')
+    dataframe = pd.read_excel(file)
     return dataframe
 
 def create_list(dataframe, column_name):
@@ -40,18 +40,12 @@ def remove_duplicates(data):
 def drop_cols(data, column_num):
     new_df = data.drop(data.columns[[column_num]], axis = 1)
     return new_df
-
-def create_heatmap(data, figsize1, figsize2):
-    df_corr = data.corr()
-    plt.figure(figsize = (figsize1, figsize2))
-    sns.heatmap(df_corr, annot = True)
-    plt.show()
     
 """""""""""""""
 SEPARATE DATA
 """""""""""""""
 os.chdir('/Users/umreenimam/Documents/Coding/data_analysis/music_analysis')
-file = 'coldplay_tracks.csv'
+file = 'coldplay_tracks.xlsx'
 coldplay_df = read_data(file)
 
 # Get release dates and album names
@@ -69,11 +63,19 @@ album_dates['albums'] = albums
 # Rename column of album_dates dataframe
 album_dates.columns = ['release_date', 'album']
 
+# Format date column
+dates = pd.to_datetime(album_dates['release_date'])
+formatted_dates = dates.dt.strftime('%m/%d/%y')
+album_dates['release_dates'] = formatted_dates
+
+# Drop original date column
+album_dates = album_dates.drop('release_date', axis = 1)
+
 # Export dataframe to csv
-album_dates.to_csv('album_dates.csv', sep = ',')
+album_dates.to_excel('album_dates.xlsx')
 
 # Print album_dates in table form 
-headers = ['index', 'release_date', 'album']
+headers = ['index', 'album', 'release_date']
 album_table = tabulate(album_dates, headers = headers, tablefmt = 'fancy_grid')
 print(album_table)
 
@@ -111,15 +113,15 @@ head_full = head_full.reset_index(drop = True)
 everyday_life = everyday_life.reset_index(drop = True)
 
 # Export all dataframes as csv files
-parachutes.to_csv('parachutes.csv', sep = ',')
-a_rush.to_csv('a_rush.csv', sep = ',')
-x_y.to_csv('x_y.csv', sep = ',')
-viva_la_vida.to_csv('viva_la_vida.csv', sep = ',')
-prospekt_march.to_csv('prospekt_march.csv', sep = ',')
-mylo_xyloto.to_csv('mylo_xyloto.csv', sep = ',')
-ghost_stories.to_csv('ghost_stories.csv', sep = ',')
-head_full.to_csv('head_full.csv', sep = ',')
-everyday_life.to_csv('everyday_life.csv', sep = ',')
+parachutes.to_excel('parachutes.xlsx')
+a_rush.to_excel('a_rush.xlsx')
+x_y.to_excel('x_y.xlsx')
+viva_la_vida.to_excel('viva_la_vida.xlsx')
+prospekt_march.to_excel('prospekt_march.xlsx')
+mylo_xyloto.to_excel('mylo_xyloto.xlsx')
+ghost_stories.to_excel('ghost_stories.xlsx')
+head_full.to_excel('head_full.xlsx')
+everyday_life.to_excel('everyday_life.xlsx')
 
 """""""""""""""
 Explore DataFrames
@@ -128,7 +130,7 @@ Explore DataFrames
 top_ten = coldplay_df.nlargest(10, 'popularity')
 top_ten = drop_cols(top_ten, 2)
 top_ten = top_ten.reset_index(drop = True)
-top_ten.to_csv('top_ten.csv', sep = ',')
+top_ten.to_excel('top_ten.xlsx')
 
 
 
